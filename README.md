@@ -10,6 +10,9 @@ This project focuses on sentiment analysis on social media using natural languag
 ### Diabetes Prediction 
 This project focuses on predicting the likelihood of an individual having diabetes based on various health-related features using machine learning models, deep learning.
 
+### Housing Prediction
+This project focuses on predicting the price of house based on various health-related features using machine learning models, deep learning.
+
 ## Getting Started
 
 To explore the details and source code of each project, please visit the corresponding directories in our repository. We hope these projects will be useful and engaging for you.
