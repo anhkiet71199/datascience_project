@@ -20,6 +20,9 @@ This project aims to develop a robust machine learning model that can accurately
 
 This project involves classifying a collection of over 40,000 articles from VNexpress into 13 distinct categories using both traditional machine learning techniques and deep learning models. The dataset was split into training and testing sets, preprocessed using text normalization, tokenization, and stopword removal. Data visualizations were generated to explore category distributions. The classification models encompassed Logistic Regression, Decision Tree, SVM, ensemble methods (LightGBM, XGBoost, Random Forest), and deep learning approaches (RNN, LSTM). The primary objective is to assess and compare the accuracy of machine learning versus deep learning in text classification for the vnexpress dataset, shedding light on optimal approaches for this Vietnamese news article corpus. 
 
+### Fake news detection
+This project aims to detect fake news on the internet. In this project, I have employed techniques such as removing stopwords and special characters, as well as stemming words. I utilized the TF-IDF method to vectorize the data and employed machine learning techniques for prediction.
+
 ## Getting Started
 
 To explore the details and source code of each project, please visit the corresponding directories in our repository. I hope these projects will be useful and engaging for you.
