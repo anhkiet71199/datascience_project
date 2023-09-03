@@ -23,6 +23,9 @@ This project involves classifying a collection of over 40,000 articles from VNex
 ### Fake news detection
 This project aims to detect fake news on the internet. In this project, I have employed techniques such as removing stopwords and special characters, as well as stemming words. I utilized the TF-IDF method to vectorize the data and employed machine learning techniques for prediction.
 
+### Data ETL pipeline
+In my project, I utilize the Keras Fashion MNIST dataset, employing an ETL (Extract, Transform, Load) approach. I extract data from this dataset, perform necessary transformations, and then store it in an SQLite3 database. This stored data is later loaded for subsequent use within another project.
+
 ## Getting Started
 
 To explore the details and source code of each project, please visit the corresponding directories in our repository. I hope these projects will be useful and engaging for you.
