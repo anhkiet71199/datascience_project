@@ -26,6 +26,9 @@ This project aims to detect fake news on the internet. In this project, I have e
 ### Data ETL pipeline
 In my project, I utilize the Keras Fashion MNIST dataset, employing an ETL (Extract, Transform, Load) approach. I extract data from this dataset, perform necessary transformations, and then store it in an SQLite3 database. This stored data is later loaded for subsequent use within another project.
 
+### Topic Modeling
+This project employs Latent Dirichlet Allocation (LDA) for topic modeling. LDA is a statistical model used to extract meaningful topics from a collection of text data. We also include data preprocessing techniques to clean and prepare your text data for analysis.
+
 ## Getting Started
 
 To explore the details and source code of each project, please visit the corresponding directories in our repository. I hope these projects will be useful and engaging for you.
