@@ -35,6 +35,9 @@ The pricing of smartphones is a critical aspect of marketing, as these devices a
 ### Google search analysis
 The statement highlights that Google handles a massive volume of searches daily, making it a valuable source for search query data analysis. While Google doesn't provide direct access to daily search query data, Google Trends offers an API called "pytrends" for this purpose. The project involves analyzing the search term "Machine learning" using this API.
 
+### Time series bicyle counts on Fremont Bridge
+As an example of working with some time series data, let's take a look at bicycle counts on Seattle's Fremont Bridge. This data comes from an automated bicycle counter installed in late 2012, which has inductive sensors on the east and west sidewalks of the bridge. In this project, I aim to analyze detailed bicycle counts on the Fremont Bridge.
+
 ## Getting Started
 
 To explore the details and source code of each project, please visit the corresponding directories in our repository. I hope these projects will be useful and engaging for you.
