@@ -30,7 +30,10 @@ In my project, I utilize the Keras Fashion MNIST dataset, employing an ETL (Extr
 This project employs Latent Dirichlet Allocation (LDA) for topic modeling. LDA is a statistical model used to extract meaningful topics from a collection of text data. We also include data preprocessing techniques to clean and prepare your text data for analysis.
 
 ### Mobile price prediction
-The pricing of smartphones is a critical aspect of marketing, as these devices are packed with features, making it essential to strike a balance between justifying the price and covering manufacturing and marketing costs. With mobile phones being highly popular and frequently upgraded, setting the right price is challenging for aspiring mobile phone businesses. This project focuses on classifying mobile prices using machine learning methods.
+The pricing of smartphones is a critical aspect of marketing, as these devices are packed with features, making it essential to strike a balance between justifying the price and covering manufacturing and marketing costs. With mobile phones being highly popular and frequently upgraded, setting the right price is challenging for aspiring mobile phone businesses. This project focuses on classifying mobile prices using machine learning methods. 
+
+### Google search analysis
+The statement highlights that Google handles a massive volume of searches daily, making it a valuable source for search query data analysis. While Google doesn't provide direct access to daily search query data, Google Trends offers an API called "pytrends" for this purpose. The project involves analyzing the search term "Machine learning" using this API.
 
 ## Getting Started
 
