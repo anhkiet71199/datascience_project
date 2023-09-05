@@ -1,7 +1,3 @@
-/****************************************/
-/*   30 Simple SQL Interview Queries    */
-/****************************************/
-
 /*1. Delete table Employee, Department and Company.*/
 DROP TABLE IF EXISTS Employee;
 DROP TABLE IF EXISTS Department;
@@ -15,23 +11,23 @@ Department with attributes (id, name)
 Company with attributes (id, name, revenue)
 */
 CREATE TABLE department(
-	id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(50) NOT NULL
+	id SERIAL PRIMARY KEY,
+	name VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE company(
-	id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(100) NOT NULL,
-    revenue INT
+	id SERIAL PRIMARY KEY ,
+	name VARCHAR(100) NOT NULL,
+	revenue INT
 );
 
-CREATE TABLE Employee(
-	id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(150) NOT NULL,
-    city VARCHAR(150) NOT NULL,
-    department_id INT NOT NULL,
-    salary INT NOT NULL,
-    FOREIGN KEY (department_id) REFERENCES department(id)
+CREATE TABLE employee(
+	id SERIAL PRIMARY KEY,
+	name VARCHAR(150) NOT NULL,
+	city VARCHAR(150) NOT NULL,
+	department_id INT NOT NULL,
+	salary INT NOT NULL,
+	FOREIGN KEY (department_id) REFERENCES department(id)
 );
 
 /*
@@ -85,7 +81,8 @@ VALUES
 /*
 6. Query all rows from Department table
 */
-SELECT * FROM department;
+SELECT * 
+FROM department;
 
 /*
 7. Change the name of department with id =  1 to 'Management'
@@ -103,7 +100,8 @@ WHERE salary > 100000;
 /*
 9. Query the names of companies
 */
-SELECT name FROM company;
+SELECT name 
+FROM company;
 
 /*
 10. Query the name and city of every employee
@@ -114,82 +112,96 @@ FROM employee;
 /*
 11. Query all companies with revenue greater than 5 000 000
 */
-SELECT * FROM company
+SELECT * 
+FROM company
 WHERE revenue > 5000000;
 
 /*
 12. Query all companies with revenue smaller than 5 000 000
 */
-SELECT * FROM company
+SELECT * 
+FROM company
 WHERE revenue < 5000000;
 
 /*
 13. Query all companies with revenue smaller than 5 000 000, but you cannot use the '<' operator
 */
-SELECT * FROM company
+SELECT * 
+FROM company
 ORDER BY revenue
 LIMIT 1;
 
 /*version 2*/
-SELECT * FROM company
+SELECT * 
+FROM company
 WHERE NOT revenue >= 5000000;
 
 /*
 14. Query all employees with salary greater than 50 000 and smaller than 70 000
 */
-SELECT * FROM employee
+SELECT *
+FROM employee
 WHERE salary BETWEEN 50000 AND 70000;
 
 /*
 15. Query all employees with salary greater than 50 000 and smaller than 70 000, but you cannot use BETWEEN
 */
-SELECT * FROM employee
+SELECT * 
+FROM employee
 WHERE salary >= 50000 AND salary <= 70000;
 
 /*
 16. Query all employees with salary equal to 80 000
 */
-SELECT * FROM employee
+SELECT * 
+FROM employee
 WHERE salary = 80000;
 
 /*
 17. Query all employees with salary not equal to 80 000
 */
-SELECT * FROM employee
+SELECT * 
+FROM employee
 WHERE salary <> 80000;
 
 /*
 18. Query all names of employees with salary greater than 70 000 together with employees who work on the 'IT' department.
 */
-SELECT name FROM employee
+SELECT name 
+FROM employee
 WHERE salary > 70000
 OR department_id IN (
-	SELECT id FROM department
-    WHERE name = 'IT'
+	SELECT id 
+	FROM department
+	WHERE name = 'IT'
 );
 
 /*
 19. Query all employees that work in city that starts with 'L'
 */
-SELECT * FROM employee
+SELECT * 
+FROM employee
 WHERE city LIKE 'L%';
 
 /*
 20. Query all employees that work in city that starts with 'L' or ends with 's'
 */
-SELECT * FROM employee
+SELECT *
+FROM employee
 WHERE city LIKE 'L%' OR city LIKE '%s';
 
 /*
 21. Query all employees that  work in city with 'o' somewhere in the middle
 */
-SELECT * FROM employee
+SELECT * 
+FROM employee
 WHERE city LIKE '%o%';
 
 /*
 22. Query all departments (each name only once)
 */
-SELECT DISTINCT name FROM department;
+SELECT DISTINCT name 
+FROM department;
 
 /*
 22. Query names of all employees together with id of department they work in, but you cannot use JOIN
@@ -212,17 +224,17 @@ ORDER BY emp.name, dep.id;
 24. Query name of every company together with every department
 Personal thoughts: It is kinda weird question, as there is no relationship between company and departement
 */
-SELECT com.name,dep.name
-FROM company com, department dep
-ORDER BY com.name;
+SELECT comp.name,dep.name
+FROM company comp, department dep
+ORDER BY comp.name;
 
 /*
 25. Query name of every company together with departments without the 'Support' department
 */
-SELECT com.name,dep.name
-FROM company com, department dep
+SELECT comp.name,dep.name
+FROM company comp, department dep
 WHERE dep.name NOT LIKE 'Support'
-ORDER BY com.name;
+ORDER BY comp.name;
 
 /*
 26. Query employee name together with the department name that they are not working in
@@ -239,19 +251,19 @@ GOOGLE IBM
 Apple IBM
 ...
 */
-SELECT com1.name, com2.name
-FROM company com1, company com2
-WHERE com1.name <> com2.name
-ORDER BY com1.name,com2.name;
+SELECT comp1.name, comp2.name
+FROM company comp1, company comp2
+WHERE comp1.name <> comp2.name
+ORDER BY comp1.name,comp2.name;
 
 
 /*
 28. Query employee names with salary smaller than 80 000 without using NOT and <
 NOTE: for POSTGRESQL only. Mysql doesn't support except
 */
-SELECT e1.name FROM employee e1
+SELECT emp1.name FROM employee emp1
 EXCEPT
-SELECT e2.name FROM employee e2 WHERE e2.salary >= 80000;
+SELECT emp2.name FROM employee emp2 WHERE emp2.salary >= 80000;
 
 
 /*
