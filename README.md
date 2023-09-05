@@ -38,6 +38,9 @@ The statement highlights that Google handles a massive volume of searches daily,
 ### Time series bicyle counts on Fremont Bridge
 As an example of working with some time series data, let's take a look at bicycle counts on Seattle's Fremont Bridge. This data comes from an automated bicycle counter installed in late 2012, which has inductive sensors on the east and west sidewalks of the bridge. In this project, I aim to analyze detailed bicycle counts on the Fremont Bridge.
 
+### SQL Project 
+In this project, I will practice working with databases using PostgreSQL, MySQL, or SQL Server.
+
 ## Getting Started
 
 To explore the details and source code of each project, please visit the corresponding directories in our repository. I hope these projects will be useful and engaging for you.
