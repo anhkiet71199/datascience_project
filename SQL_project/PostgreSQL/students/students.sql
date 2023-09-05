@@ -73,10 +73,10 @@ CREATE TABLE student_courses(
 /* Insert at least 3 records to table courses and 5 records to student_courses */
 INSERT INTO student_courses (student_id, course_id)
 VALUES
-    (1, 1),  -- John đăng ký khóa học "Introduction to Programming"
-    (2, 2),  -- Jane đăng ký khóa học "Biology 101"
-    (3, 3),  -- Tom đăng ký khóa học "Physics for Engineers"
-    (1, 2);  -- John đăng ký thêm khóa học "Biology 101"
+    (1, 1),  
+    (2, 2),  
+    (3, 3),  
+    (1, 2);  
 	
 /* Write query to get all students and courses with student register */
 SELECT students.first_name, students.last_name, courses.course_name
