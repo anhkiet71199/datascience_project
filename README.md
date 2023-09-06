@@ -38,6 +38,9 @@ The statement highlights that Google handles a massive volume of searches daily,
 ### Time series bicyle counts on Fremont Bridge
 As an example of working with some time series data, let's take a look at bicycle counts on Seattle's Fremont Bridge. This data comes from an automated bicycle counter installed in late 2012, which has inductive sensors on the east and west sidewalks of the bridge. In this project, I aim to analyze detailed bicycle counts on the Fremont Bridge.
 
+### Customer segmentation
+Customer Personality Analysis is a detailed examination of a company's ideal customers, helping the business better understand its customers' unique needs, behaviors, and concerns. This analysis allows the company to tailor its products to specific customer segments, rather than wasting resources on a broad marketing approach. In this project, customer clustering will be performed to provide relevant insights and recommendations.
+
 ### SQL Project 
 In this project, I will practice working with databases using PostgreSQL, MySQL, or SQL Server.
 
