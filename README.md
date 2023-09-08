@@ -44,9 +44,6 @@ Customer Personality Analysis is a detailed examination of a company's ideal cus
 ### SQL Project 
 In this project, I will practice working with databases using PostgreSQL, MySQL, or SQL Server.
 
-## Getting Started
-
-To explore the details and source code of each project, please visit the corresponding directories in our repository. I hope these projects will be useful and engaging for you.
 
 Thank you for visiting, and let's share your feedback and contributions to further develop these exciting Data Science projects!
 
