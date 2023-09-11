@@ -41,6 +41,9 @@ As an example of working with some time series data, let's take a look at bicycl
 ### Customer segmentation
 Customer Personality Analysis is a detailed examination of a company's ideal customers, helping the business better understand its customers' unique needs, behaviors, and concerns. This analysis allows the company to tailor its products to specific customer segments, rather than wasting resources on a broad marketing approach. In this project, customer clustering will be performed to provide relevant insights and recommendations.
 
+### Movie recommendation system
+This project presents a basic movie recommendation system using the MovieLens 100K dataset. The main method applied is item-based collaborative filtering, leveraging user ratings to determine movie similarities.
+
 ### SQL Project 
 In this project, I will practice working with databases using PostgreSQL, MySQL, or SQL Server.
 
