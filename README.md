@@ -44,6 +44,9 @@ Customer Personality Analysis is a detailed examination of a company's ideal cus
 ### Movie recommendation system
 This project presents a basic movie recommendation system using the MovieLens 100K dataset. The main method applied is item-based collaborative filtering, leveraging user ratings to determine movie similarities.
 
+### Anime recommendation system
+This project presents a basic anime recommendation system using the Japanese Anime: An In-Depth IMDb Data Set dataset. The main method applied is leveraging summary to determine anime similarities.
+
 ### Spaceship Titanic
 In this project, I am honing my skills in feature extraction, cleaning, and transformation techniques to make predictions about the transportation system on Spaceship Titanic. Through meticulous data analysis and processing, I aim to uncover valuable insights that will contribute to a more efficient and seamless transport experience for passengers aboard the spaceship. This endeavor involves gathering and refining data, identifying relevant features, and applying advanced data processing methods. By leveraging these techniques, I hope to enhance the overall transportation infrastructure, ensuring a smoother journey for all passengers on Spaceship Titanic
 
